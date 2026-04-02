@@ -1,0 +1,29 @@
+month,id,state,solar_generation
+Feb,1,Andhra Pradesh,4200
+Feb,2,Arunachal Pradesh,1500
+Feb,3,Assam,2100
+Feb,4,Bihar,1800
+Feb,5,Chhattisgarh,2300
+Feb,6,Goa,900
+Feb,7,Gujarat,6800
+Feb,8,Haryana,2500
+Feb,9,Himachal Pradesh,1700
+Feb,10,Jharkhand,1900
+Feb,11,Karnataka,5400
+Feb,12,Kerala,2600
+Feb,13,Madhya Pradesh,5000
+Feb,14,Maharashtra,4800
+Feb,15,Manipur,1400
+Feb,16,Meghalaya,1300
+Feb,17,Mizoram,1200
+Feb,18,Nagaland,1100
+Feb,19,Odisha,3000
+Feb,20,Punjab,2700
+Feb,21,Rajasthan,7600
+Feb,22,Sikkim,1000
+Feb,23,Tamil Nadu,3800
+Feb,24,Telangana,4100
+Feb,25,Tripura,900
+Feb,26,Uttar Pradesh,5500
+Feb,27,Uttarakhand,1600
+Feb,28,West Bengal,3500

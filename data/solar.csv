@@ -1,0 +1,15 @@
+state,city,date,sunlight_hours,temperature,cloud_cover,solar_output_kw
+Rajasthan,Jaipur,2026-02-01,9.5,28,10,520
+Rajasthan,Jodhpur,2026-02-01,10.2,30,5,580
+Gujarat,Ahmedabad,2026-02-01,9.0,29,15,500
+Karnataka,Bangalore,2026-02-01,7.5,25,30,420
+Tamil Nadu,Chennai,2026-02-01,8.2,31,20,460
+Maharashtra,Mumbai,2026-02-01,7.0,32,40,380
+Delhi,Delhi,2026-02-01,8.0,27,25,440
+Punjab,Amritsar,2026-02-01,7.8,26,35,410
+
+Rajasthan,Jaipur,2026-02-02,9.8,29,8,540
+Gujarat,Ahmedabad,2026-02-02,9.2,30,12,510
+Karnataka,Bangalore,2026-02-02,7.3,24,35,400
+Tamil Nadu,Chennai,2026-02-02,8.5,32,18,470
+Delhi,Delhi,2026-02-02,8.1,28,22,450
