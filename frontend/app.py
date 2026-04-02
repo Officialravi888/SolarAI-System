@@ -1,25 +1,17 @@
 import streamlit as st
 import pandas as pd
 
-# -----------------------------
-# Page Config
-# -----------------------------
 st.set_page_config(page_title="Solar Dashboard", layout="wide")
 
 st.title("☀️ Solar Energy Dashboard (India)")
 
-# -----------------------------
-# Load Data
-# -----------------------------
+
 @st.cache_data
 def load_data():
     return pd.read_csv("data/solar1.csv")
 
 df = load_data()
 
-# -----------------------------
-# Sidebar Filter
-# -----------------------------
 st.sidebar.header("🔍 Filter")
 
 selected_state = st.sidebar.multiselect(
@@ -30,24 +22,18 @@ selected_state = st.sidebar.multiselect(
 
 filtered_df = df[df["state"].isin(selected_state)].copy()
 
-# -----------------------------
-# KPIs
-# -----------------------------
+
 col1, col2, col3 = st.columns(3)
 
 col1.metric("⚡ Total Generation", int(filtered_df["solar_generation"].sum()))
 col2.metric("📈 Average", round(filtered_df["solar_generation"].mean(), 2))
 col3.metric("🏙️ Total States", filtered_df["state"].nunique())
 
-# -----------------------------
-# Data Table
-# -----------------------------
+
 st.subheader("📄 Solar Data Table")
 st.dataframe(filtered_df, width='stretch')
 
-# -----------------------------
-# Bar Chart
-# -----------------------------
+
 st.subheader("📊 State-wise Solar Generation")
 state_group = filtered_df.groupby("state")["solar_generation"].sum()
 st.bar_chart(state_group)
